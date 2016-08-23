@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AppearViewController" customModule="LimitingProgram" customModuleProvider="target">
+            <connections>
+                <outlet property="exitBtn" destination="eDo-b9-X1B" id="gv6-3q-P1f"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDo-b9-X1B">
+                    <rect key="frame" x="113" y="309" width="150" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.94028860299999995" blue="0.69730128339999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Gmc-pH-0ol"/>
+                        <constraint firstAttribute="width" constant="150" id="HQp-ms-Z2n"/>
+                    </constraints>
+                    <state key="normal" title="按下退出程序">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickToExit" destination="-1" eventType="touchUpInside" id="oQj-uK-wOs"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.56883493269999996" green="0.76237340980000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="eDo-b9-X1B" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="aex-7k-Dcw"/>
+                <constraint firstItem="eDo-b9-X1B" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="iWa-dC-IXm"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+</document>
